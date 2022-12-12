@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+    table{
+        width: 80%;
+    }
+
+   table, td, th{
+    border: solid 1px black;
+   }
+
+
+    </style>
+
+</head>
+<body>
+
+ 
+<h1>Atelier tableau</h1>
+
+<table>
+    <caption>Atelier tableau</caption>
+    <thead>
+        <tr>
+        <th colspan="3">L'entete occupe toute la largeur du tableau</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="2">Cette cellule occupe 2 lignes</td>
+            <td>cellule</td>
+            <td>cellule</td>
+        </tr>
+        <tr>
+            <td>je n'ai besoin de définir que </td>
+            <td>deux cellules sur cette ligne</td>
+        </tr>
+        <tr>
+            <td>Pied de page</td>
+            <td colspan="2">Fusion de deux cellules</td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>
