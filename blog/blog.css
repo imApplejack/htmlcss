@@ -1,0 +1,18 @@
+
+h1{
+    color: blueviolet;
+}
+
+
+ul li {
+    display: inline;
+}
+
+.carousel div {
+    display: inline-block;
+    width: 33%;
+}
+
+.carousel img{
+    max-width: 100%;
+}
