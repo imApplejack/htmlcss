@@ -1,0 +1,30 @@
+
+body{
+   margin-top: 0;
+}
+nav{
+    background-color: red;
+    font-size: 1.5em;
+    padding: 0.2em;
+}
+
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+ul li {
+    list-style-type: none;
+    padding-right: 1em;
+}
+
+
+#home-banner{
+    background-color: teal;
+}
+
+#div-englobante{
+    background-color: orange;
+}

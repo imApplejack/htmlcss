@@ -1,0 +1,19 @@
+p{
+    color: aquamarine;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+ul{
+    display: flex;
+}
+
+ul li {
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+header {
+    background-image: url("https://cdn.shopify.com/s/files/1/0249/6376/files/pixnio_2eca23e2-54c0-416f-b8f2-10bc88368e76.jpg?v=1557631143");
+    height: 100px;
+}
