@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Lora&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" >
+    <link rel="stylesheet" href="responsivegrid.css">
+
 
     <style>
 
@@ -57,21 +59,31 @@
 
             div.blockcolores{
                 background-image: url("https://thumbs.dreamstime.com/b/chat-et-crabot-5275870.jpg");
-                width: 100%;
-                margin: 10px;
+                /* margin: 10px; */
                 border-radius: 10px;
                 height: 300px;
                 display: flex;
                 flex-direction: row;
-                padding: 10px;
+                /* padding: 10px; */
             }
 
             div.blockcolores__left{
+                display: flex;
                 flex-grow: 1;
+                justify-content: center;
+                background-color: rgba(255,255,255,0.40);
+                padding: 10px;
             }
             div.blockcolores__right{
                 flex-grow: 5;
+                padding: 10px;
             }
+
+            div.blockcolores__left .botleft{
+                align-self: flex-end;
+            }
+
+
 
             .footer{
                 display: flex;
@@ -79,6 +91,11 @@
                 text-align: center;
                 justify-content: space-around
             }
+
+            .text-center{
+                text-align: center;
+            }
+
 
     </style>
 
@@ -95,35 +112,43 @@
     </ul>
     <div class="biglogo">
         <h1>Organisez votre <br> <i>Voyage sur mesure</i></h1>
-       
     </div>
 
-    <div class="tiblocks">
-        <div>
+    <!-- <div class="section group">
+        <div style="background-color: aqua;" class="col span_1_of_3 ">pouet</div>
+        <div style="background-color: red;" class="col span_1_of_3 ">pouet</div>
+        <div style="background-color: red;" class="col span_1_of_3 ">pouet</div>
+    </div> -->
+
+    <div class="section group text-center">
+        <div class="col span_1_of_3">
             <span class="material-symbols-outlined">home</span>
             <p>blabla</p>
         </div>
-        <div>
+        <div class="col span_1_of_3">
             <span class="material-symbols-outlined">arrow_drop_up</span>
             <p>blibli</p>
         </div>
-        <div>
+        <div class="col span_1_of_3">
             <span class="material-symbols-outlined">phone_in_talk</span>
             <p>blibli</p>
         </div>
     </div>
 
 
-    <div class="tiblocks">
-        <div class="blockcolores">
+    <div class="section group">
+        <div class="col span_1_of_3 blockcolores">
             <div class="blockcolores__left">blablablabla bla bla</div>
             <div class="blockcolores__right">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat ullam error consequuntur aut odio, nihil, nulla perferendis deleniti excepturi, ea nisi temporibus numquam? Ducimus perspiciatis iste eaque rerum at est!</div>
         </div>
-        <div class="blockcolores">
-            <div class="blockcolores__left">bla</div>
+        <div class="col span_1_of_3 blockcolores">
+            <div class="blockcolores__left">
+                <p>bliblibli</p>
+                <p class="botleft"><a href="#">ici</a></p>
+            </div>
             <div class="blockcolores__right">bla</div>
         </div>
-        <div class="blockcolores">
+        <div class="col span_1_of_3 blockcolores">
             <div class="blockcolores__left">bla</div>
             <div class="blockcolores__right">bla</div>
         </div>
